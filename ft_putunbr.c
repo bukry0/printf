@@ -6,7 +6,7 @@
 /*   By: bcili <bcili@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 14:48:39 by bcili             #+#    #+#             */
-/*   Updated: 2024/12/01 19:12:04 by bcili            ###   ########.fr       */
+/*   Updated: 2024/12/02 14:19:25 by bcili            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	ft_putunbr(unsigned int x)
 		c = x + '0';
 		write(1, &c, 1);
 	}
-	else if (x > 9)
+	else
 	{
 		ft_putunbr(x / 10);
 		ft_putunbr(x % 10);

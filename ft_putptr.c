@@ -6,15 +6,15 @@
 /*   By: bcili <bcili@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 14:53:09 by bcili             #+#    #+#             */
-/*   Updated: 2024/12/01 19:11:58 by bcili            ###   ########.fr       */
+/*   Updated: 2024/12/02 14:02:40 by bcili            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putptr(unsigned long long int x)
+int	ft_putptr(unsigned long x)
 {
-	unsigned long long int	len;
+	int	len;
 
 	len = 0;
 	if (x == 0)

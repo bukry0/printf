@@ -6,13 +6,13 @@
 /*   By: bcili <bcili@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 14:58:15 by bcili             #+#    #+#             */
-/*   Updated: 2024/12/01 19:10:02 by bcili            ###   ########.fr       */
+/*   Updated: 2024/12/02 14:19:57 by bcili            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	digitcounthex(unsigned long long int x)
+static int	digitcounthex(unsigned long x)
 {
 	int	digit;
 
@@ -25,7 +25,7 @@ static int	digitcounthex(unsigned long long int x)
 	return (digit);
 }
 
-int	ft_puthex(unsigned long long int x, char c)
+int	ft_puthex(unsigned long x, char c)
 {
 	char	ch;
 

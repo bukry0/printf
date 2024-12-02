@@ -6,7 +6,7 @@
 /*   By: bcili <bcili@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 15:07:45 by bcili             #+#    #+#             */
-/*   Updated: 2024/12/01 19:11:46 by bcili            ###   ########.fr       */
+/*   Updated: 2024/12/02 13:36:45 by bcili            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_printf(const char *s, ...)
 {
 	int		i;
 	int		len;
-	int		rofs;
+	int		resofs;
 	va_list	args;
 
 	va_start(args, s);
@@ -26,10 +26,10 @@ int	ft_printf(const char *s, ...)
 	{
 		if (s[i - 1] == '%' && i++ != -1)
 		{
-			rofs = ft_sorting(s[i - 1], args);
-			if (rofs == -1)
-				break ;
-			len += rofs;
+			resofs = ft_sorting(s[i - 1], args);
+			if (resofs == -1)
+				return (0);
+			len += resofs;
 		}
 		else
 		{

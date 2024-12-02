@@ -6,7 +6,7 @@
 /*   By: bcili <bcili@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 17:57:41 by bcili             #+#    #+#             */
-/*   Updated: 2024/12/01 19:12:01 by bcili            ###   ########.fr       */
+/*   Updated: 2024/12/02 14:20:20 by bcili            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,11 @@ int	ft_putstr(char *s)
 	int	len;
 
 	len = 0;
+	if (!s)
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
 	while (s[len])
 	{
 		write(1, &s[len], 1);
