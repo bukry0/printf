@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sorting.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bcili <bcili@student.42.fr>                +#+  +:+       +#+        */
+/*   By: musyilma <musyilma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 16:41:48 by bcili             #+#    #+#             */
-/*   Updated: 2024/12/02 14:03:24 by bcili            ###   ########.fr       */
+/*   Updated: 2024/12/02 18:17:46 by musyilma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_sorting(const char c, va_list args)
 	if (c == 'c')
 		len = ft_putchar(va_arg(args, int));
 	else if (c == 'x' || c == 'X')
-		len = ft_puthex(va_arg(args, unsigned long), c);
+		len = ft_puthex(va_arg(args, unsigned int), c);
 	else if (c == 'd' || c == 'i')
 		len = ft_putnbr(va_arg(args, int));
 	else if (c == 'p')

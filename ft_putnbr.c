@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bcili <bcili@student.42.fr>                +#+  +:+       +#+        */
+/*   By: musyilma <musyilma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 18:02:02 by bcili             #+#    #+#             */
-/*   Updated: 2024/12/02 14:20:03 by bcili            ###   ########.fr       */
+/*   Updated: 2024/12/02 15:56:15 by musyilma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ static int	digitcount(int x)
 	int	digit;
 
 	digit = 0;
+	if (x == 0)
+		return (1);
 	while (x != 0)
 	{
 		x /= 10;
@@ -38,7 +40,7 @@ int	ft_putnbr(int x)
 	}
 	if (x < 0)
 	{
-		write (1, "-", 1);
+		write(1, "-", 1);
 		x *= -1;
 		len++;
 	}

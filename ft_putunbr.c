@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putunbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bcili <bcili@student.42.fr>                +#+  +:+       +#+        */
+/*   By: musyilma <musyilma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 14:48:39 by bcili             #+#    #+#             */
-/*   Updated: 2024/12/02 14:19:25 by bcili            ###   ########.fr       */
+/*   Updated: 2024/12/02 15:58:44 by musyilma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@ static int	digitcount(unsigned int x)
 	int	digit;
 
 	digit = 0;
-	while (x != 0)
+	if (x == 0)
+		return (1);
+	while (x > 0)
 	{
 		x /= 10;
 		digit++;
